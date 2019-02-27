@@ -1,13 +1,13 @@
 ﻿
 
 # Criando sessão remota no servidor
-Enter-PSSession -ComputerName "TJWUP04" -Credential 400062u@tj.ce.gov.br
+Enter-PSSession -ComputerName "wsusserver" -Credential user@@domain
 
 # armazenar KB na variavel
 $kb = Get-Content c:\kb.txt
 
 # conexão com o WSUS
-$Computername = 'TJWUP04'
+$Computername = 'wsusserver'
 $UseSSL = $False
 $Port = 8530
 
